@@ -1,0 +1,60 @@
+@mixin sm {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+@mixin md {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+
+
+
+
+.bg-cover{
+    background-position: center center;
+    background-size: cover;
+}
+.text-hind{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-vertical{
+    writing-mode: vertical-rl;
+    text-align: justify;
+}
+
+.p-less-0{
+    @include sm{
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+}
+.m-less-0{
+    @include sm{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+.pm-less-0{
+    @include sm{
+        padding-left:0 !important;
+        padding-right:0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}

@@ -1,0 +1,43 @@
+.cart{
+    &-img{
+        width: 110px;
+        height: 110px;
+        @include md{
+            width: 157px;
+            height: 106px;
+        }
+    }
+    &-quantity{
+        height: 50px !important;
+        width: 50px !important;
+        @include md{
+            height: 40px !important;
+            width: 40px !important;
+        }
+    }
+    &-price-boder{
+        @include md{
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            text-align: end;
+        }
+    }
+    &-title-boder{
+        border-bottom: 1px solid gray ;
+        @include lg{
+            border-bottom: none !important;
+        }
+    }
+    &-total{
+        background-color: $primary;
+        @include lg{
+            background-color: white;
+        }
+    }
+    &-total-text{
+        color: white;
+        @include lg{
+            color: black;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.list-group{
+    .active{
+        background-color: $third !important;
+        border: 1px solid $third !important;
+        color: $primary !important;
+    }
+    &.sticky-top{
+        top: 20px;
+    }
+}

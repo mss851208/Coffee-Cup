@@ -1,0 +1,75 @@
+.checkout{
+    &-progress{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background-color: $primary;
+        border: 1px solid $fourth;
+        border-radius: 50%;
+        z-index: 2;
+        &.active::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: 12px;
+            height: 12px;
+            background-color: $success;
+            border-radius: 50%;
+        }
+    }
+    &-progress-suc{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        background-color: $success;
+        border-radius: 50%;
+        z-index: 2;
+        & .fa-check{
+            font-size: 13px;
+        }
+    }
+    &-progress-fin{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        background-color: $primary;
+        border-radius: 50%;
+        z-index: 2;
+        & .fa-check{
+            font-size: 13px;
+        }
+    }
+    &-line{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        height: 1px;
+        background-color: $info;
+    }
+    &-img{
+        width: 100%;
+        height: 80px;
+    }
+    &-list-group{
+        &:hover{
+            text-decoration: none;
+        }
+        &.active{
+            color: white !important;
+            border: 1px solid white !important;
+            background-color: $primary !important;
+        }
+    }
+}

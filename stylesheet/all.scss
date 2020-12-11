@@ -1,0 +1,27 @@
+
+//helpers
+@import '../node_modules/bootstrap/scss/functions';
+@import 'helpers/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+
+//bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+//components
+@import 'components/rectangle';
+@import 'components/utilities';
+@import 'components/jumbotron';
+@import 'components/main';
+@import 'components/card';
+@import 'components/from';
+@import 'components/list-tap';
+@import 'components/carts';
+@import 'components/checkout';
+@import 'components/alert';
+
+//layout
+@import 'layout/header';
+@import 'layout/footer';
+
+

@@ -1,0 +1,26 @@
+.card{
+    transition: .3s;
+    &-img-top{
+        min-height: 315px;
+    }
+    &-btn{
+        font-size: $spacer * 1.5 !important;
+        font-weight: $font-weight-bold !important; 
+    }
+    &-badge{
+        text-align: center;
+        height: 106px;
+        font-size: $spacer !important;
+    }
+    &-badge-fav{
+        top: 20px;
+        right: 20px;
+    }
+    &:hover{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+}
+
+.fa-heart-full{
+    color: chartreuse;
+}

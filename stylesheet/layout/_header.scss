@@ -1,0 +1,15 @@
+header{
+    .active>.nav-link{
+        color: $primary !important;
+    }
+    .nav-link,.active>.nav-link{
+        font-weight: $font-weight-bold;
+        &:hover{
+            color: $primary !important;
+        }
+    }
+    .fa{
+        color: $primary;
+    }
+
+}
