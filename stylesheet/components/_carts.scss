@@ -15,14 +15,14 @@
             width: 40px !important;
         }
     }
-    &-price-boder{
+    &-price-border{
         @include md{
             border-top: 1px solid gray;
             border-bottom: 1px solid gray;
             text-align: end;
         }
     }
-    &-title-boder{
+    &-title-border{
         border-bottom: 1px solid gray ;
         @include lg{
             border-bottom: none !important;
@@ -40,4 +40,7 @@
             color: black;
         }
     }
+}
+#success-alert{
+    opacity: 0;
 }
